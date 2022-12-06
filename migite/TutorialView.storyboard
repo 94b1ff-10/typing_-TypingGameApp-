@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tutorial View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="TutorialView" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="TutorialViewController" customModule="migite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTm-ge-W1l">
+                                <rect key="frame" x="40" y="92" width="295" height="527.66666666666663"/>
+                                <string key="text">Hello_
+
+Thank you for downloading "migite". This app targets people who want to improve their right hand typing and therefore only focuses on the right side of keyboard.
+
+
+Try tapping "🎮" , You can play mini game that gives you typing  accuracy and speed.
+
+Accuracy :	--%
+
+Speed : --c/min*
+
+*Characters per Minute
+
+(Average is around 200c/min)
+
+
+Hope you enjoy!
+
+Regards, 
+Ten M</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZt-am-xzR">
+                                <rect key="frame" x="142.33333333333334" y="639.66666666666663" width="90.333333333333343" height="43.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start_">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                    <color key="baseForegroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7eo-aK-mg8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KTm-ge-W1l" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="45" id="4wr-zQ-TDE"/>
+                            <constraint firstItem="xZt-am-xzR" firstAttribute="centerX" secondItem="KTm-ge-W1l" secondAttribute="centerX" id="FmB-Hn-peA"/>
+                            <constraint firstItem="xZt-am-xzR" firstAttribute="top" secondItem="KTm-ge-W1l" secondAttribute="bottom" constant="20" id="nhh-fs-LyD"/>
+                            <constraint firstItem="KTm-ge-W1l" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="omU-Qt-2sp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KTm-ge-W1l" secondAttribute="trailing" constant="40" id="sGQ-ty-Ais"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4558" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -10,10 +10,26 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        let userDefaults = UserDefaults.standard
+//        let firstLunchKey = "firstLunchKey"
+//        let firstLunch = [firstLunchKey: true]
+//        userDefaults.register(defaults: firstLunch)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if launchedBefore == true {
+            UserDefaults.standard.set(false, forKey: "launchedBefore")
+        } else {
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+            let tutorialVC = storyboard.instantiateViewController(withIdentifier: "TutorialView") as! TutorialViewController
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = tutorialVC
+        }
+        
         return true
     }
 
