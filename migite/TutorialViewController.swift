@@ -13,5 +13,4 @@ class TutorialViewController: UIViewController {
     @IBAction func startButton(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
-    
 }

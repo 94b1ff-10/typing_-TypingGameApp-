@@ -10,19 +10,24 @@ import UIKit
 
 class KeyboardViewController: UIViewController {
     
-    //横画面に固定
+    //Fix to the horizontal screen
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .landscape
     }
     
-//    override func viewDidAppear(_ animated: Bool) {
-//            super.viewDidAppear(animated)
-//            let userDefaults = UserDefaults.standard
-//            let firstLunchKey = "firstLunchKey"
-//            if userDefaults.bool(forKey: firstLunchKey) {
-//                let storyboard = UIStoryboard(name: "TutorialView", bundle: nil)
-//                guard let viewController = storyboard.instantiateInitialViewController() as? TutorialViewController else { return }
-//                present(viewController, animated: true)
-//        }
-//    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tutorial()
+    }
+    
+    //App description (first launch only)
+    func tutorial() {
+        if UserDefaults.standard.bool(forKey: "firstLunchKey") {
+            let tutorialView = UIStoryboard(name: "TutorialView", bundle: nil)
+            guard let tutorialViewController = tutorialView.instantiateInitialViewController() as? TutorialViewController else { return }
+            present(tutorialViewController, animated: true)
+            UserDefaults.standard.set(false, forKey: "firstLunchKey")
+        }
+    }
+    
 }

@@ -109,8 +109,8 @@
 				A10E4C712934599E00818DCD /* SceneDelegate.swift */,
 				A10E4C7A2934599F00818DCD /* LaunchScreen.storyboard */,
 				A10E4C752934599E00818DCD /* Main.storyboard */,
-				A10AFB8E2934E19000C36EDE /* TutorialView.storyboard */,
 				A10AFB8C2934C55300C36EDE /* KeyboardViewController.swift */,
+				A10AFB8E2934E19000C36EDE /* TutorialView.storyboard */,
 				A10AFB902934E21700C36EDE /* TutorialViewController.swift */,
 			);
 			path = migite;
