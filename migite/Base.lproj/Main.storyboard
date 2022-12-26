@@ -23,7 +23,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="medium">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.20033482142857142" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25196641156462585" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="6">
@@ -36,13 +36,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key1_1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ABW-Cs-vli"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ss-Us-lWf">
                                         <rect key="frame" x="103" y="0.0" width="95.666666666666686" height="55.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="medium">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.20033482142857142" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25196641156462585" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="7">
@@ -55,13 +58,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key1_2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xeB-Y4-AOU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phf-yN-46f">
                                         <rect key="frame" x="205.66666666666666" y="0.0" width="95.999999999999972" height="55.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="medium">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.20033482142857142" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25196641156462585" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="8">
@@ -74,13 +80,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key1_3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="baP-FQ-Auz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxJ-z4-Bv4">
                                         <rect key="frame" x="308.66666666666669" y="0.0" width="95.666666666666686" height="55.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="medium">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.20033482142857142" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25196641156462585" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="9">
@@ -93,13 +102,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key1_4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Xs-f9-7gh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZa-aa-PoR">
                                         <rect key="frame" x="411.33333333333331" y="0.0" width="96" height="55.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="medium">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.20033482142857142" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25196641156462585" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="0">
@@ -112,13 +124,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key1_5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j1c-JQ-D57"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xn-X0-WBE">
                                         <rect key="frame" x="514.33333333333337" y="0.0" width="95.666666666666629" height="55.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="medium">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.20033482142857142" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25196641156462585" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="=">
@@ -139,6 +154,9 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key1_6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bzR-M5-Q8S"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnu-ut-uwe">
                                         <rect key="frame" x="617" y="0.0" width="96" height="55.333333333333336"/>
@@ -148,7 +166,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="medium">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.20033482142857142" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25196641156462585" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="~">
@@ -169,6 +187,9 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key1_7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OZU-nO-Vtf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -180,7 +201,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25361394554965982" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Y">
@@ -193,13 +214,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key2_1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nZZ-bI-HeW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqR-no-gK3">
                                         <rect key="frame" x="103" y="0.0" width="95.666666666666686" height="96"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25361394554965982" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="U">
@@ -212,13 +236,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key2_2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HEc-fQ-Kmg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5X-pW-DBY">
                                         <rect key="frame" x="205.66666666666669" y="0.0" width="96" height="96"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25361394554965982" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="I">
@@ -231,13 +258,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key2_3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2sy-jb-g6E"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPD-yw-xe9">
                                         <rect key="frame" x="308.66666666666669" y="0.0" width="95.666666666666686" height="96"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25361394554965982" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="O">
@@ -250,13 +280,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key2_4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3aT-c1-NoM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeE-XP-Wcr">
                                         <rect key="frame" x="411.33333333333331" y="0.0" width="96" height="96"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25361394554965982" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="P">
@@ -269,13 +302,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key2_5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hov-PW-IaJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gce-pV-aPo">
                                         <rect key="frame" x="514.33333333333337" y="0.0" width="95.666666666666629" height="96"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25361394554965982" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="`">
@@ -296,6 +332,9 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key2_6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eQ5-TW-ayo"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8s5-Af-onb">
                                         <rect key="frame" x="617" y="0.0" width="96" height="96"/>
@@ -305,7 +344,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25361394554965982" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="{">
@@ -326,6 +365,9 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key2_7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WGZ-Tc-qUq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -337,7 +379,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25361394549999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="H">
@@ -350,13 +392,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key3_1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mSe-iD-Ors"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cux-E0-BQx">
                                         <rect key="frame" x="103" y="0.0" width="95.666666666666686" height="96"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25361394549999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="J">
@@ -369,13 +414,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key3_2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U4i-03-YVE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEw-fz-W6z">
                                         <rect key="frame" x="205.66666666666669" y="0.0" width="96" height="96"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25361394549999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="K">
@@ -388,13 +436,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key3_3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jub-nv-CKw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbB-kd-J7f">
                                         <rect key="frame" x="308.66666666666669" y="0.0" width="95.666666666666686" height="96"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25361394549999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="L">
@@ -407,13 +458,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key3_4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tZM-Fw-FzU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdZ-Z2-Zc5">
                                         <rect key="frame" x="411.33333333333331" y="0.0" width="96" height="96"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25361394549999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="+">
@@ -434,13 +488,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key3_5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ppU-4V-mED"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyQ-tL-fG7">
                                         <rect key="frame" x="514.33333333333337" y="0.0" width="95.666666666666629" height="96"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25361394549999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="*">
@@ -461,6 +518,9 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key3_6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RtI-qk-wx7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28X-kY-ao0">
                                         <rect key="frame" x="617" y="0.0" width="96" height="96"/>
@@ -470,7 +530,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25361394549999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="}">
@@ -491,6 +551,9 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key3_7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="grn-Tm-Wvp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -502,7 +565,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25228528908707482" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="🎮">
@@ -515,13 +578,16 @@
                                             <color key="baseForegroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="informationKeyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pdE-of-LMJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2z-uA-etL">
                                         <rect key="frame" x="103" y="0.0" width="95.666666666666686" height="95.666666666666671"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25228528908707482" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="N">
@@ -534,13 +600,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key4_2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6kE-45-KFS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbx-Re-lAi">
                                         <rect key="frame" x="205.66666666666666" y="0.0" width="95.999999999999972" height="95.666666666666671"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25228528908707482" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="M">
@@ -553,13 +622,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key4_3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VJU-1s-bDV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6x-3e-cvU">
                                         <rect key="frame" x="308.66666666666669" y="0.0" width="95.666666666666686" height="95.666666666666671"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25228528908707482" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="&lt;">
@@ -580,13 +652,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key4_4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kri-wY-Wys"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmN-K7-QLd">
                                         <rect key="frame" x="411.33333333333331" y="0.0" width="96" height="95.666666666666671"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25228528908707482" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="&gt;">
@@ -607,13 +682,16 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key4_5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z78-Tg-1UZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5F-UE-fqR">
                                         <rect key="frame" x="514.33333333333337" y="0.0" width="95.666666666666629" height="95.666666666666671"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25228528908707482" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="?">
@@ -634,6 +712,9 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key4_6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TzI-Ms-H3e"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ti-cD-NX7">
                                         <rect key="frame" x="617" y="0.0" width="96" height="95.666666666666671"/>
@@ -643,7 +724,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                             <backgroundConfiguration key="background" strokeOutset="-1">
-                                                <color key="strokeColor" white="0.2003348214" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.25228528908707482" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </backgroundConfiguration>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="_">
@@ -656,6 +737,9 @@
                                             <color key="baseForegroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="key4_7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="thZ-Kv-rgG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -678,6 +762,9 @@
                             <constraint firstItem="7Ci-2F-jaq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="66" id="sYO-NA-jbT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="informationKey" destination="eqE-FQ-Z1O" id="jwr-xJ-Mgi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
