@@ -61,6 +61,7 @@ class KeyboardViewController: UIViewController {
     // row 4
     @IBOutlet weak var informationKey: UIButton!
     @IBAction func informationKeyAction(_ sender: UIButton) {
+        typingGame()
     }
     @IBAction func key4_2(_ sender: UIButton) {
     }
@@ -75,18 +76,69 @@ class KeyboardViewController: UIViewController {
     @IBAction func key4_7(_ sender: UIButton) {
     }
     
+    // Fix to the horizontal screen
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .landscape
+    }
     
-    // Life cycle
+    // 27 letters
+    let letter: Array <String> =
+    ["6", "7", "8", "9", "0", "-", "^",
+     "Y", "U", "I", "O", "P", "@", "[",
+     "H", "J", "K", "L", ";", ":", "]",
+     "N", "M", ",", ".", "/", "_"]
+    
+    var informationKeyTitle: [String] = []
+    
+    // Life cycle method ↓
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configureInformationKey()
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         tutorial()
     }
     
+    // Functions for informationKey ↓
     
-    // Fix to the horizontal screen
-        override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-            return .landscape
+    func typingGame() {
+        informationKey.isEnabled = false
+        countDown()
+//        self.informationKey.isEnabled = true // タイピングゲームの最後に記述
+    }
+    
+    func countDown() {
+        var count = 3
+        informationKey.setTitle("\(count)", for: .normal)
+        print("3")
+        count -= 1
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.informationKey.setTitle("\(count)", for: .normal)
+            print("2")
+            count -= 1
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                self.informationKey.setTitle("\(count)", for: .normal)
+                print("1")
+                count -= 1
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    print("Start!")
+                    //ここにタイピングゲームの処理を書く
+                    self.informationKey.isEnabled = true
+                }
+            }
         }
+    }
+    
+    func gameStart() {
+        
+    }
+    
+    func configureInformationKey() {
+        informationKey.setTitleColor(UIColor.lightGray, for: .disabled)
+    }
 
     // App description (first launch only)
     func tutorial() {
