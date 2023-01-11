@@ -88,7 +88,7 @@ class KeyboardViewController: UIViewController {
      "H", "J", "K", "L", ";", ":", "]",
      "N", "M", ",", ".", "/", "_"]
     
-    var informationKeyTitle: [String] = []
+    var appearLetters: [String] = []
     
     // Life cycle method ↓
     
@@ -113,19 +113,15 @@ class KeyboardViewController: UIViewController {
     func countDown() {
         var count = 3
         informationKey.setTitle("\(count)", for: .normal)
-        print("3")
         count -= 1
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             self.informationKey.setTitle("\(count)", for: .normal)
-            print("2")
             count -= 1
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 self.informationKey.setTitle("\(count)", for: .normal)
-                print("1")
                 count -= 1
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                    print("Start!")
-                    //ここにタイピングゲームの処理を書く
+                    self.gameStart()
                     self.informationKey.isEnabled = true
                 }
             }
