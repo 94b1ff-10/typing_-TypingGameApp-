@@ -570,8 +570,10 @@
                                             <attributedString key="attributedTitle">
                                                 <fragment content="🎮">
                                                     <attributes>
-                                                        <font key="NSFont" size="26" name="AppleColorEmoji"/>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="30" name="AppleColorEmoji"/>
                                                         <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
@@ -601,7 +603,7 @@
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="key4_2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6kE-45-KFS"/>
+                                            <action selector="key4_1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sdt-62-cIZ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbx-Re-lAi">
@@ -623,7 +625,7 @@
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="key4_3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VJU-1s-bDV"/>
+                                            <action selector="key4_2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BfJ-df-DdZ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6x-3e-cvU">
@@ -653,7 +655,7 @@
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="key4_4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kri-wY-Wys"/>
+                                            <action selector="key4_3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ihv-yD-Ogc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmN-K7-QLd">
@@ -683,7 +685,7 @@
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="key4_5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z78-Tg-1UZ"/>
+                                            <action selector="key4_4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1eQ-hf-XT7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5F-UE-fqR">
@@ -713,7 +715,7 @@
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="key4_6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TzI-Ms-H3e"/>
+                                            <action selector="key4_5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1xV-xY-aK1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ti-cD-NX7">
@@ -738,7 +740,7 @@
                                             <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="key4_7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="thZ-Kv-rgG"/>
+                                            <action selector="key4_6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZRT-6Q-bSF"/>
                                         </connections>
                                     </button>
                                 </subviews>
