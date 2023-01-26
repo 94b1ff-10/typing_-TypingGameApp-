@@ -13,91 +13,91 @@ class KeyboardViewController: UIViewController {
     // row 1
     @IBAction func key1_1(_ sender: UIButton) {
         key = "6"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key1_2(_ sender: UIButton) {
         key = "7"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key1_3(_ sender: UIButton) {
         key = "8"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key1_4(_ sender: UIButton) {
         key = "9"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key1_5(_ sender: UIButton) {
         key = "0"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key1_6(_ sender: UIButton) {
         key = "-"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key1_7(_ sender: UIButton) {
         key = "^"
-        inputLetter()
+        keyAction()
     }
     
     // row 2
     @IBAction func key2_1(_ sender: UIButton) {
         key = "Y"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key2_2(_ sender: UIButton) {
         key = "U"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key2_3(_ sender: UIButton) {
         key = "I"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key2_4(_ sender: UIButton) {
         key = "O"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key2_5(_ sender: UIButton) {
         key = "P"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key2_6(_ sender: UIButton) {
         key = "@"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key2_7(_ sender: UIButton) {
         key = "["
-        inputLetter()
+        keyAction()
     }
     
     // row 3
     @IBAction func key3_1(_ sender: UIButton) {
         key = "H"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key3_2(_ sender: UIButton) {
         key = "J"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key3_3(_ sender: UIButton) {
         key = "K"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key3_4(_ sender: UIButton) {
         key = "L"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key3_5(_ sender: UIButton) {
         key = ";"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key3_6(_ sender: UIButton) {
         key = ":"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key3_7(_ sender: UIButton) {
         key = "]"
-        inputLetter()
+        keyAction()
     }
     
     // row 4
@@ -107,27 +107,27 @@ class KeyboardViewController: UIViewController {
     }
     @IBAction func key4_1(_ sender: UIButton) {
         key = "N"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key4_2(_ sender: UIButton) {
         key = "M"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key4_3(_ sender: UIButton) {
         key = ","
-        inputLetter()
+        keyAction()
     }
     @IBAction func key4_4(_ sender: UIButton) {
         key = "."
-        inputLetter()
+        keyAction()
     }
     @IBAction func key4_5(_ sender: UIButton) {
         key = "/"
-        inputLetter()
+        keyAction()
     }
     @IBAction func key4_6(_ sender: UIButton) {
         key = "_"
-        inputLetter()
+        keyAction()
     }
     
     // Fix to the horizontal screen
@@ -135,7 +135,8 @@ class KeyboardViewController: UIViewController {
         return .landscape
     }
     
-    // Data
+    // Data ↓
+    
     let letters: Array <String> =
     ["6", "7", "8", "9", "0", "-", "^",
      "Y", "U", "I", "O", "P", "@", "[",
@@ -144,31 +145,26 @@ class KeyboardViewController: UIViewController {
     
     var key = ""
     
+    var correct: Double = 40
+    
     var informationKeyTitle: [String] = []
+    
+    var start = Date()
     
     // Life cycle method ↓
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        configureInformationKey()
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        informationKey.setTitleColor(UIColor.lightGray, for: .disabled)
         tutorial()
     }
     
     // Functions for informationKey ↓
     
-    func configureInformationKey() {
-        informationKey.setTitleColor(UIColor.lightGray, for: .disabled)
-    }
-    
     func typingGame() {
         informationKey.isEnabled = false
-        key = ""
         countDown()
-//        self.informationKey.isEnabled = true // タイピングゲームの最後に記述
+        //        self.informationKey.isEnabled = true // タイピングゲームの最後に記述
     }
     
     func countDown() {
@@ -183,7 +179,6 @@ class KeyboardViewController: UIViewController {
                 count -= 1
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     self.setLetters()
-                    //self.gameStart()
                 }
             }
         }
@@ -194,24 +189,27 @@ class KeyboardViewController: UIViewController {
             informationKeyTitle.append(letters.randomElement()!)
         }
         informationKey.setTitle("\(informationKeyTitle.prefix(5).joined())", for: .normal)
-    }
-    
-    func gameStart() {
-        let start = Date()
-        // action
-        let finish = Date().timeIntervalSince(start)
-        print(finish)
+        start = Date.now
+        key = ""
+        correct = 40
     }
     
     // Function for keys ↓
     
-    func inputLetter() {
+    func keyAction() {
         if key == informationKeyTitle.first {
             informationKeyTitle.removeFirst()
             informationKey.setTitle("\(informationKeyTitle.prefix(5).joined())", for: .normal)
+        } else {
+            correct -= 1
+        }
+        
+        if informationKeyTitle.isEmpty && !informationKey.isEnabled {
+            let finish = Date().timeIntervalSince(start)
+            informationKey.setTitle("\(Int(correct/40*100))%\n\(Int(40/finish*60))c/min", for: .normal)
         }
     }
-
+    
     // App description (first launch only)
     func tutorial() {
         if UserDefaults.standard.bool(forKey: "firstLunchKey") {
