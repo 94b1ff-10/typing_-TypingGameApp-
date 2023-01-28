@@ -17,7 +17,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTm-ge-W1l">
                                 <rect key="frame" x="40" y="92" width="295" height="527.66666666666663"/>
-                                <string key="text">Hello_
+                                <mutableString key="text">Hello_
 
 Thank you for downloading "migite". This app targets people who want to improve their right hand typing and therefore only focuses on the right side of keyboard.
 
@@ -36,7 +36,7 @@ Speed : --c/min*
 Hope you enjoy!
 
 Regards, 
-Ten M</string>
+Ten M</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>

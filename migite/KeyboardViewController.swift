@@ -151,6 +151,8 @@ class KeyboardViewController: UIViewController {
     
     var start = Date()
     
+    var reset = false
+    
     // Life cycle method ↓
     
     override func viewDidAppear(_ animated: Bool) {
@@ -162,9 +164,13 @@ class KeyboardViewController: UIViewController {
     // Functions for informationKey ↓
     
     func typingGame() {
-        informationKey.isEnabled = false
-        countDown()
-        //        self.informationKey.isEnabled = true // タイピングゲームの最後に記述
+        if reset {
+            informationKey.setTitle("🎮", for: .normal)
+            reset = false
+        } else {
+            informationKey.isEnabled = false
+            countDown()
+        }
     }
     
     func countDown() {
@@ -207,6 +213,8 @@ class KeyboardViewController: UIViewController {
         if informationKeyTitle.isEmpty && !informationKey.isEnabled {
             let finish = Date().timeIntervalSince(start)
             informationKey.setTitle("\(Int(correct/40*100))%\n\(Int(40/finish*60))c/min", for: .normal)
+            reset = true
+            self.informationKey.isEnabled = true
         }
     }
     
