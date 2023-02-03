@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class KeyboardViewController: UIViewController {
     
@@ -153,6 +154,8 @@ class KeyboardViewController: UIViewController {
     
     var reset = false
     
+    var player: AVAudioPlayer?
+    
     // Life cycle method ↓
     
     override func viewDidAppear(_ animated: Bool) {
@@ -203,6 +206,15 @@ class KeyboardViewController: UIViewController {
     // Function for keys ↓
     
     func keyAction() {
+        if let soundURL = Bundle.main.url(forResource: "keySound", withExtension: "wav") {
+            do {
+                player = try AVAudioPlayer(contentsOf: soundURL)
+                player?.play()
+            } catch {
+                print("error")
+            }
+        }
+        
         if key == informationKeyTitle.first {
             informationKeyTitle.removeFirst()
             informationKey.setTitle("\(informationKeyTitle.prefix(5).joined())", for: .normal)
