@@ -206,6 +206,9 @@ class KeyboardViewController: UIViewController {
     // Function for keys ↓
     
     func keyAction() {
+        
+        UISelectionFeedbackGenerator().selectionChanged()
+        
         if let soundURL = Bundle.main.url(forResource: "keySound", withExtension: "wav") {
             do {
                 player = try AVAudioPlayer(contentsOf: soundURL)
