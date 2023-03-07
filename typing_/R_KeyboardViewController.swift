@@ -1,105 +1,133 @@
 //
-//  L_KeyboardViewController.swift
-//  migite
+//  KeyboardViewController.swift
+//  typing_
 //
-//  Created by TEN MATSUMOTO on 5/3/2023.
+//  Created by TEN MATSUMOTO on 28/11/2022.
 //
 
 import Foundation
 import UIKit
 import AVFoundation
 
-class L_KeyboardViewController: UIViewController {
+class R_KeyboardViewController: UIViewController {
     
     // row 1
     @IBAction func key1_1(_ sender: UIButton) {
-        key = "1"
+        key = "6"
         keyAction()
     }
     @IBAction func key1_2(_ sender: UIButton) {
-        key = "2"
+        key = "7"
         keyAction()
     }
     @IBAction func key1_3(_ sender: UIButton) {
-        key = "3"
+        key = "8"
         keyAction()
     }
     @IBAction func key1_4(_ sender: UIButton) {
-        key = "4"
+        key = "9"
         keyAction()
     }
     @IBAction func key1_5(_ sender: UIButton) {
-        key = "5"
+        key = "0"
+        keyAction()
+    }
+    @IBAction func key1_6(_ sender: UIButton) {
+        key = "-"
+        keyAction()
+    }
+    @IBAction func key1_7(_ sender: UIButton) {
+        key = "^"
         keyAction()
     }
     
     // row 2
     @IBAction func key2_1(_ sender: UIButton) {
-        key = "Q"
+        key = "Y"
         keyAction()
     }
     @IBAction func key2_2(_ sender: UIButton) {
-        key = "W"
+        key = "U"
         keyAction()
     }
     @IBAction func key2_3(_ sender: UIButton) {
-        key = "E"
+        key = "I"
         keyAction()
     }
     @IBAction func key2_4(_ sender: UIButton) {
-        key = "R"
+        key = "O"
         keyAction()
     }
     @IBAction func key2_5(_ sender: UIButton) {
-        key = "T"
+        key = "P"
+        keyAction()
+    }
+    @IBAction func key2_6(_ sender: UIButton) {
+        key = "@"
+        keyAction()
+    }
+    @IBAction func key2_7(_ sender: UIButton) {
+        key = "["
         keyAction()
     }
     
     // row 3
     @IBAction func key3_1(_ sender: UIButton) {
-        key = "A"
+        key = "H"
         keyAction()
     }
     @IBAction func key3_2(_ sender: UIButton) {
-        key = "S"
+        key = "J"
         keyAction()
     }
     @IBAction func key3_3(_ sender: UIButton) {
-        key = "D"
+        key = "K"
         keyAction()
     }
     @IBAction func key3_4(_ sender: UIButton) {
-        key = "F"
+        key = "L"
         keyAction()
     }
     @IBAction func key3_5(_ sender: UIButton) {
-        key = "G"
+        key = ";"
         keyAction()
     }
+    @IBAction func key3_6(_ sender: UIButton) {
+        key = ":"
+        keyAction()
+    }
+    @IBAction func key3_7(_ sender: UIButton) {
+        key = "]"
+        keyAction()
+    }
+    
+    // row 4
     @IBOutlet weak var informationKey: UIButton!
     @IBAction func informationKeyAction(_ sender: UIButton) {
         typingGame()
     }
-    
-    // row 4
     @IBAction func key4_1(_ sender: UIButton) {
-        key = "Z"
+        key = "N"
         keyAction()
     }
     @IBAction func key4_2(_ sender: UIButton) {
-        key = "X"
+        key = "M"
         keyAction()
     }
     @IBAction func key4_3(_ sender: UIButton) {
-        key = "C"
+        key = ","
         keyAction()
     }
     @IBAction func key4_4(_ sender: UIButton) {
-        key = "V"
+        key = "."
         keyAction()
     }
     @IBAction func key4_5(_ sender: UIButton) {
-        key = "B"
+        key = "/"
+        keyAction()
+    }
+    @IBAction func key4_6(_ sender: UIButton) {
+        key = "_"
         keyAction()
     }
     
@@ -111,10 +139,10 @@ class L_KeyboardViewController: UIViewController {
     // Data ↓
     
     let letters: Array <String> =
-    ["1", "2", "3", "4", "5",
-     "Q", "W", "E", "R", "T",
-     "A", "S", "D", "F", "G",
-     "Z", "X", "C", "V", "B"]
+    ["6", "7", "8", "9", "0", "-", "^",
+     "Y", "U", "I", "O", "P", "@", "[",
+     "H", "J", "K", "L", ";", ":", "]",
+     "N", "M", ",", ".", "/", "_"]
     
     var key = ""
     

@@ -10,17 +10,19 @@
         <!--Tutorial View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="TutorialView" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="TutorialViewController" customModule="migite" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TutorialView" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="TutorialViewController" customModule="typing_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTm-ge-W1l">
-                                <rect key="frame" x="40" y="92" width="295" height="527.66666666666663"/>
+                                <rect key="frame" x="40" y="92" width="295" height="568.33333333333337"/>
                                 <mutableString key="text">Hello_
 
-Thank you for downloading "migite". This app targets people who want to improve their right hand typing and therefore only focuses on the right side of keyboard.
+Thank you for downloading "typing_". This app targets people who want to improve their typing skills.
 
+
+Swipe anywhere except buttons of keyboard so you can choose the sides.
 
 Try tapping "🎮" , You can play mini game that gives you typing  accuracy and speed.
 
@@ -33,6 +35,7 @@ Speed : --c/min*
 (Average is around 200c/min)
 
 
+
 Hope you enjoy!
 
 Regards, 
@@ -42,7 +45,7 @@ Ten M</mutableString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZt-am-xzR">
-                                <rect key="frame" x="142.33333333333334" y="639.66666666666663" width="90.333333333333343" height="43.333333333333371"/>
+                                <rect key="frame" x="142.33333333333334" y="680.33333333333337" width="90.333333333333343" height="43.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Start_">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>

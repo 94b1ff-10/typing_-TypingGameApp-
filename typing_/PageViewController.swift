@@ -1,6 +1,6 @@
 //
 //  PageViewController.swift
-//  migite
+//  typing_
 //
 //  Created by TEN MATSUMOTO on 6/3/2023.
 //
@@ -9,6 +9,11 @@ import Foundation
 import UIKit
 
 class PageViewController: UIPageViewController {
+    
+    // Fix to the horizontal screen
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .landscape
+    }
 
     private var controllers: [UIViewController] = []
     

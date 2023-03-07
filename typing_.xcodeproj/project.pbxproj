@@ -15,9 +15,6 @@
 		A10E4C772934599E00818DCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10E4C752934599E00818DCD /* Main.storyboard */; };
 		A10E4C792934599E00818DCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10E4C782934599E00818DCD /* Assets.xcassets */; };
 		A10E4C7C2934599F00818DCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10E4C7A2934599F00818DCD /* LaunchScreen.storyboard */; };
-		A10E4C872934599F00818DCD /* migiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E4C862934599F00818DCD /* migiteTests.swift */; };
-		A10E4C912934599F00818DCD /* migiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E4C902934599F00818DCD /* migiteUITests.swift */; };
-		A10E4C932934599F00818DCD /* migiteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E4C922934599F00818DCD /* migiteUITestsLaunchTests.swift */; };
 		A151EF5029B3B88700946442 /* L_KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151EF4F29B3B88700946442 /* L_KeyboardViewController.swift */; };
 		A151EF5229B4FA6400946442 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151EF5129B4FA6400946442 /* PageViewController.swift */; };
 		A1E6007A298D328B000B7C32 /* keySound.wav in Resources */ = {isa = PBXBuildFile; fileRef = A1E60079298D328B000B7C32 /* keySound.wav */; };
@@ -44,7 +41,7 @@
 		A10AFB8C2934C55300C36EDE /* R_KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R_KeyboardViewController.swift; sourceTree = "<group>"; };
 		A10AFB8E2934E19000C36EDE /* TutorialView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TutorialView.storyboard; sourceTree = "<group>"; };
 		A10AFB902934E21700C36EDE /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
-		A10E4C6C2934599E00818DCD /* migite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = migite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10E4C6C2934599E00818DCD /* typing_.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = typing_.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10E4C6F2934599E00818DCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A10E4C712934599E00818DCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A10E4C762934599E00818DCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,10 +49,7 @@
 		A10E4C7B2934599F00818DCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A10E4C7D2934599F00818DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A10E4C822934599F00818DCD /* migiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = migiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A10E4C862934599F00818DCD /* migiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = migiteTests.swift; sourceTree = "<group>"; };
 		A10E4C8C2934599F00818DCD /* migiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = migiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A10E4C902934599F00818DCD /* migiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = migiteUITests.swift; sourceTree = "<group>"; };
-		A10E4C922934599F00818DCD /* migiteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = migiteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A151EF4F29B3B88700946442 /* L_KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L_KeyboardViewController.swift; sourceTree = "<group>"; };
 		A151EF5129B4FA6400946442 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		A1E60079298D328B000B7C32 /* keySound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = keySound.wav; sourceTree = "<group>"; };
@@ -89,9 +83,7 @@
 		A10E4C632934599E00818DCD = {
 			isa = PBXGroup;
 			children = (
-				A10E4C6E2934599E00818DCD /* migite */,
-				A10E4C852934599F00818DCD /* migiteTests */,
-				A10E4C8F2934599F00818DCD /* migiteUITests */,
+				A10E4C6E2934599E00818DCD /* typing_ */,
 				A10E4C6D2934599E00818DCD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,14 +91,14 @@
 		A10E4C6D2934599E00818DCD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A10E4C6C2934599E00818DCD /* migite.app */,
+				A10E4C6C2934599E00818DCD /* typing_.app */,
 				A10E4C822934599F00818DCD /* migiteTests.xctest */,
 				A10E4C8C2934599F00818DCD /* migiteUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A10E4C6E2934599E00818DCD /* migite */ = {
+		A10E4C6E2934599E00818DCD /* typing_ */ = {
 			isa = PBXGroup;
 			children = (
 				A10E4C7D2934599F00818DCD /* Info.plist */,
@@ -122,24 +114,7 @@
 				A10AFB902934E21700C36EDE /* TutorialViewController.swift */,
 				A1E60079298D328B000B7C32 /* keySound.wav */,
 			);
-			path = migite;
-			sourceTree = "<group>";
-		};
-		A10E4C852934599F00818DCD /* migiteTests */ = {
-			isa = PBXGroup;
-			children = (
-				A10E4C862934599F00818DCD /* migiteTests.swift */,
-			);
-			path = migiteTests;
-			sourceTree = "<group>";
-		};
-		A10E4C8F2934599F00818DCD /* migiteUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A10E4C902934599F00818DCD /* migiteUITests.swift */,
-				A10E4C922934599F00818DCD /* migiteUITestsLaunchTests.swift */,
-			);
-			path = migiteUITests;
+			path = typing_;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +134,7 @@
 			);
 			name = migite;
 			productName = migite;
-			productReference = A10E4C6C2934599E00818DCD /* migite.app */;
+			productReference = A10E4C6C2934599E00818DCD /* typing_.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A10E4C812934599F00818DCD /* migiteTests */ = {
@@ -221,7 +196,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A10E4C672934599E00818DCD /* Build configuration list for PBXProject "migite" */;
+			buildConfigurationList = A10E4C672934599E00818DCD /* Build configuration list for PBXProject "typing_" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -288,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A10E4C872934599F00818DCD /* migiteTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,8 +270,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A10E4C912934599F00818DCD /* migiteUITests.swift in Sources */,
-				A10E4C932934599F00818DCD /* migiteUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,7 +431,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V29A8DCZ56;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = migite/Info.plist;
+				INFOPLIST_FILE = typing_/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -470,8 +442,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ten.migite;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "ten.com.typing-";
+				PRODUCT_NAME = typing_;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -490,7 +462,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V29A8DCZ56;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = migite/Info.plist;
+				INFOPLIST_FILE = typing_/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -501,8 +473,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ten.migite;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "ten.com.typing-";
+				PRODUCT_NAME = typing_;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -591,7 +563,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A10E4C672934599E00818DCD /* Build configuration list for PBXProject "migite" */ = {
+		A10E4C672934599E00818DCD /* Build configuration list for PBXProject "typing_" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A10E4C942934599F00818DCD /* Debug */,
