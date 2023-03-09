@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A10AFB8D2934C55300C36EDE /* R_KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10AFB8C2934C55300C36EDE /* R_KeyboardViewController.swift */; };
-		A10AFB8F2934E19000C36EDE /* TutorialView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10AFB8E2934E19000C36EDE /* TutorialView.storyboard */; };
 		A10AFB912934E21700C36EDE /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10AFB902934E21700C36EDE /* TutorialViewController.swift */; };
 		A10E4C702934599E00818DCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E4C6F2934599E00818DCD /* AppDelegate.swift */; };
 		A10E4C722934599E00818DCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E4C712934599E00818DCD /* SceneDelegate.swift */; };
@@ -39,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		A10AFB8C2934C55300C36EDE /* R_KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R_KeyboardViewController.swift; sourceTree = "<group>"; };
-		A10AFB8E2934E19000C36EDE /* TutorialView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TutorialView.storyboard; sourceTree = "<group>"; };
 		A10AFB902934E21700C36EDE /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		A10E4C6C2934599E00818DCD /* typing_.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = typing_.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10E4C6F2934599E00818DCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				A10E4C6F2934599E00818DCD /* AppDelegate.swift */,
 				A10E4C712934599E00818DCD /* SceneDelegate.swift */,
 				A10E4C7A2934599F00818DCD /* LaunchScreen.storyboard */,
-				A10AFB8E2934E19000C36EDE /* TutorialView.storyboard */,
 				A10E4C752934599E00818DCD /* Main.storyboard */,
 				A10AFB8C2934C55300C36EDE /* R_KeyboardViewController.swift */,
 				A151EF4F29B3B88700946442 /* L_KeyboardViewController.swift */,
@@ -223,7 +220,6 @@
 			files = (
 				A1E6007A298D328B000B7C32 /* keySound.wav in Resources */,
 				A10E4C7C2934599F00818DCD /* LaunchScreen.storyboard in Resources */,
-				A10AFB8F2934E19000C36EDE /* TutorialView.storyboard in Resources */,
 				A10E4C792934599E00818DCD /* Assets.xcassets in Resources */,
 				A10E4C772934599E00818DCD /* Main.storyboard in Resources */,
 			);

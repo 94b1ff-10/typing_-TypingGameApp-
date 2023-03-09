@@ -12,6 +12,7 @@ import AVFoundation
 class R_KeyboardViewController: UIViewController {
     
     // row 1
+    
     @IBAction func key1_1(_ sender: UIButton) {
         key = "6"
         keyAction()
@@ -42,6 +43,7 @@ class R_KeyboardViewController: UIViewController {
     }
     
     // row 2
+    
     @IBAction func key2_1(_ sender: UIButton) {
         key = "Y"
         keyAction()
@@ -72,6 +74,7 @@ class R_KeyboardViewController: UIViewController {
     }
     
     // row 3
+    
     @IBAction func key3_1(_ sender: UIButton) {
         key = "H"
         keyAction()
@@ -102,6 +105,7 @@ class R_KeyboardViewController: UIViewController {
     }
     
     // row 4
+    
     @IBOutlet weak var informationKey: UIButton!
     @IBAction func informationKeyAction(_ sender: UIButton) {
         typingGame()
@@ -132,6 +136,7 @@ class R_KeyboardViewController: UIViewController {
     }
     
     // Fix to the horizontal screen
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .landscape
     }
@@ -158,10 +163,9 @@ class R_KeyboardViewController: UIViewController {
     
     // Life cycle method ↓
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         informationKey.setTitleColor(UIColor.lightGray, for: .disabled)
-        tutorial()
     }
     
     // Functions for informationKey ↓
@@ -230,16 +234,6 @@ class R_KeyboardViewController: UIViewController {
             informationKey.setTitle("\(Int(correct/40*100))%\n\(Int(40/finish*60))c/min", for: .normal)
             reset = true
             self.informationKey.isEnabled = true
-        }
-    }
-    
-    // App description (first launch only)
-    func tutorial() {
-        if UserDefaults.standard.bool(forKey: "firstLunchKey") {
-            let tutorialView = UIStoryboard(name: "TutorialView", bundle: nil)
-            guard let tutorialViewController = tutorialView.instantiateInitialViewController() as? TutorialViewController else { return }
-            present(tutorialViewController, animated: true)
-            UserDefaults.standard.set(false, forKey: "firstLunchKey")
         }
     }
     

@@ -41,6 +41,7 @@ class PageViewController: UIPageViewController {
         self.dataSource = self
     }
     
+    // App description (first launch only)
     func tutorial() {
         if UserDefaults.standard.bool(forKey: "firstLunchKey") {
             let tutorialViewController = self.storyboard?.instantiateViewController(withIdentifier: "TutorialView") as! TutorialViewController
