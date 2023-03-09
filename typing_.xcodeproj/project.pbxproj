@@ -48,8 +48,8 @@
 		A10E4C782934599E00818DCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A10E4C7B2934599F00818DCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A10E4C7D2934599F00818DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A10E4C822934599F00818DCD /* migiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = migiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A10E4C8C2934599F00818DCD /* migiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = migiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10E4C822934599F00818DCD /* typing_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = typing_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10E4C8C2934599F00818DCD /* typing_UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = typing_UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A151EF4F29B3B88700946442 /* L_KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L_KeyboardViewController.swift; sourceTree = "<group>"; };
 		A151EF5129B4FA6400946442 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		A1E60079298D328B000B7C32 /* keySound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = keySound.wav; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				A10E4C6C2934599E00818DCD /* typing_.app */,
-				A10E4C822934599F00818DCD /* migiteTests.xctest */,
-				A10E4C8C2934599F00818DCD /* migiteUITests.xctest */,
+				A10E4C822934599F00818DCD /* typing_Tests.xctest */,
+				A10E4C8C2934599F00818DCD /* typing_UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,9 +120,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A10E4C6B2934599E00818DCD /* migite */ = {
+		A10E4C6B2934599E00818DCD /* typing_ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A10E4C962934599F00818DCD /* Build configuration list for PBXNativeTarget "migite" */;
+			buildConfigurationList = A10E4C962934599F00818DCD /* Build configuration list for PBXNativeTarget "typing_" */;
 			buildPhases = (
 				A10E4C682934599E00818DCD /* Sources */,
 				A10E4C692934599E00818DCD /* Frameworks */,
@@ -132,14 +132,14 @@
 			);
 			dependencies = (
 			);
-			name = migite;
+			name = typing_;
 			productName = migite;
 			productReference = A10E4C6C2934599E00818DCD /* typing_.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A10E4C812934599F00818DCD /* migiteTests */ = {
+		A10E4C812934599F00818DCD /* typing_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A10E4C992934599F00818DCD /* Build configuration list for PBXNativeTarget "migiteTests" */;
+			buildConfigurationList = A10E4C992934599F00818DCD /* Build configuration list for PBXNativeTarget "typing_Tests" */;
 			buildPhases = (
 				A10E4C7E2934599F00818DCD /* Sources */,
 				A10E4C7F2934599F00818DCD /* Frameworks */,
@@ -150,14 +150,14 @@
 			dependencies = (
 				A10E4C842934599F00818DCD /* PBXTargetDependency */,
 			);
-			name = migiteTests;
+			name = typing_Tests;
 			productName = migiteTests;
-			productReference = A10E4C822934599F00818DCD /* migiteTests.xctest */;
+			productReference = A10E4C822934599F00818DCD /* typing_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A10E4C8B2934599F00818DCD /* migiteUITests */ = {
+		A10E4C8B2934599F00818DCD /* typing_UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A10E4C9C2934599F00818DCD /* Build configuration list for PBXNativeTarget "migiteUITests" */;
+			buildConfigurationList = A10E4C9C2934599F00818DCD /* Build configuration list for PBXNativeTarget "typing_UITests" */;
 			buildPhases = (
 				A10E4C882934599F00818DCD /* Sources */,
 				A10E4C892934599F00818DCD /* Frameworks */,
@@ -168,9 +168,9 @@
 			dependencies = (
 				A10E4C8E2934599F00818DCD /* PBXTargetDependency */,
 			);
-			name = migiteUITests;
+			name = typing_UITests;
 			productName = migiteUITests;
-			productReference = A10E4C8C2934599F00818DCD /* migiteUITests.xctest */;
+			productReference = A10E4C8C2934599F00818DCD /* typing_UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -209,9 +209,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A10E4C6B2934599E00818DCD /* migite */,
-				A10E4C812934599F00818DCD /* migiteTests */,
-				A10E4C8B2934599F00818DCD /* migiteUITests */,
+				A10E4C6B2934599E00818DCD /* typing_ */,
+				A10E4C812934599F00818DCD /* typing_Tests */,
+				A10E4C8B2934599F00818DCD /* typing_UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -278,12 +278,12 @@
 /* Begin PBXTargetDependency section */
 		A10E4C842934599F00818DCD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A10E4C6B2934599E00818DCD /* migite */;
+			target = A10E4C6B2934599E00818DCD /* typing_ */;
 			targetProxy = A10E4C832934599F00818DCD /* PBXContainerItemProxy */;
 		};
 		A10E4C8E2934599F00818DCD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A10E4C6B2934599E00818DCD /* migite */;
+			target = A10E4C6B2934599E00818DCD /* typing_ */;
 			targetProxy = A10E4C8D2934599F00818DCD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -442,7 +442,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ten.com.typing-";
+				PRODUCT_BUNDLE_IDENTIFIER = ten.com.TypingApp;
 				PRODUCT_NAME = typing_;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -473,7 +473,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ten.com.typing-";
+				PRODUCT_BUNDLE_IDENTIFIER = ten.com.TypingApp;
 				PRODUCT_NAME = typing_;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -500,7 +500,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/migite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/migite";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/typing_.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/typing_";
 			};
 			name = Debug;
 		};
@@ -520,7 +520,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/migite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/migite";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/typing_.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/typing_";
 			};
 			name = Release;
 		};
@@ -572,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A10E4C962934599F00818DCD /* Build configuration list for PBXNativeTarget "migite" */ = {
+		A10E4C962934599F00818DCD /* Build configuration list for PBXNativeTarget "typing_" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A10E4C972934599F00818DCD /* Debug */,
@@ -581,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A10E4C992934599F00818DCD /* Build configuration list for PBXNativeTarget "migiteTests" */ = {
+		A10E4C992934599F00818DCD /* Build configuration list for PBXNativeTarget "typing_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A10E4C9A2934599F00818DCD /* Debug */,
@@ -590,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A10E4C9C2934599F00818DCD /* Build configuration list for PBXNativeTarget "migiteUITests" */ = {
+		A10E4C9C2934599F00818DCD /* Build configuration list for PBXNativeTarget "typing_UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A10E4C9D2934599F00818DCD /* Debug */,

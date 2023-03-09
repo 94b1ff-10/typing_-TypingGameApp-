@@ -207,11 +207,15 @@ class L_KeyboardViewController: UIViewController {
     
     // App description (first launch only)
     func tutorial() {
+//        if UserDefaults.standard.bool(forKey: "firstLunchKey") {
+//            let tutorialView = UIStoryboard(name: "TutorialView", bundle: nil)
+//            guard let tutorialViewController = tutorialView.instantiateInitialViewController() as? TutorialViewController else { return }
+//            present(tutorialViewController, animated: true)
+//            UserDefaults.standard.set(false, forKey: "firstLunchKey")
+//        }
         if UserDefaults.standard.bool(forKey: "firstLunchKey") {
-            let tutorialView = UIStoryboard(name: "TutorialView", bundle: nil)
-            guard let tutorialViewController = tutorialView.instantiateInitialViewController() as? TutorialViewController else { return }
-            present(tutorialViewController, animated: true)
-            UserDefaults.standard.set(false, forKey: "firstLunchKey")
+            let tutorialViewController = self.storyboard?.instantiateViewController(withIdentifier: "TutorialView") as! TutorialViewController
+            self.present(tutorialViewController, animated: true, completion: nil)
         }
     }
     

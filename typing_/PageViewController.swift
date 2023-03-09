@@ -22,6 +22,11 @@ class PageViewController: UIPageViewController {
         self.initPageView()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tutorial()
+    }
+    
     func initPageView(){
         let RightKeyboardVC = storyboard!.instantiateViewController(withIdentifier: "RightKeyboardView") as! R_KeyboardViewController
         let LeftKeyboardVC = storyboard!.instantiateViewController(withIdentifier: "LeftKeyboardView") as! L_KeyboardViewController
@@ -35,6 +40,15 @@ class PageViewController: UIPageViewController {
         
         self.dataSource = self
     }
+    
+    func tutorial() {
+        if UserDefaults.standard.bool(forKey: "firstLunchKey") {
+            let tutorialViewController = self.storyboard?.instantiateViewController(withIdentifier: "TutorialView") as! TutorialViewController
+            present(tutorialViewController, animated: true)
+            UserDefaults.standard.set(false, forKey: "firstLunchKey")
+        }
+    }
+    
 }
 
 extension PageViewController: UIPageViewControllerDataSource {
