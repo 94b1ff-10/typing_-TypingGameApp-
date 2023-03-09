@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  migite
+//  typing_
 //
 //  Created by TEN MATSUMOTO on 28/11/2022.
 //

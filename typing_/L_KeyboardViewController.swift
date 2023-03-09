@@ -1,137 +1,114 @@
 //
-//  KeyboardViewController.swift
-//  migite
+//  L_KeyboardViewController.swift
+//  typing_
 //
-//  Created by TEN MATSUMOTO on 28/11/2022.
+//  Created by TEN MATSUMOTO on 5/3/2023.
 //
 
 import Foundation
 import UIKit
 import AVFoundation
 
-class KeyboardViewController: UIViewController {
+class L_KeyboardViewController: UIViewController {
     
     // row 1
+    
     @IBAction func key1_1(_ sender: UIButton) {
-        key = "6"
+        key = "1"
         keyAction()
     }
     @IBAction func key1_2(_ sender: UIButton) {
-        key = "7"
+        key = "2"
         keyAction()
     }
     @IBAction func key1_3(_ sender: UIButton) {
-        key = "8"
+        key = "3"
         keyAction()
     }
     @IBAction func key1_4(_ sender: UIButton) {
-        key = "9"
+        key = "4"
         keyAction()
     }
     @IBAction func key1_5(_ sender: UIButton) {
-        key = "0"
-        keyAction()
-    }
-    @IBAction func key1_6(_ sender: UIButton) {
-        key = "-"
-        keyAction()
-    }
-    @IBAction func key1_7(_ sender: UIButton) {
-        key = "^"
+        key = "5"
         keyAction()
     }
     
     // row 2
+    
     @IBAction func key2_1(_ sender: UIButton) {
-        key = "Y"
+        key = "Q"
         keyAction()
     }
     @IBAction func key2_2(_ sender: UIButton) {
-        key = "U"
+        key = "W"
         keyAction()
     }
     @IBAction func key2_3(_ sender: UIButton) {
-        key = "I"
+        key = "E"
         keyAction()
     }
     @IBAction func key2_4(_ sender: UIButton) {
-        key = "O"
+        key = "R"
         keyAction()
     }
     @IBAction func key2_5(_ sender: UIButton) {
-        key = "P"
-        keyAction()
-    }
-    @IBAction func key2_6(_ sender: UIButton) {
-        key = "@"
-        keyAction()
-    }
-    @IBAction func key2_7(_ sender: UIButton) {
-        key = "["
+        key = "T"
         keyAction()
     }
     
     // row 3
+    
     @IBAction func key3_1(_ sender: UIButton) {
-        key = "H"
+        key = "A"
         keyAction()
     }
     @IBAction func key3_2(_ sender: UIButton) {
-        key = "J"
+        key = "S"
         keyAction()
     }
     @IBAction func key3_3(_ sender: UIButton) {
-        key = "K"
+        key = "D"
         keyAction()
     }
     @IBAction func key3_4(_ sender: UIButton) {
-        key = "L"
+        key = "F"
         keyAction()
     }
     @IBAction func key3_5(_ sender: UIButton) {
-        key = ";"
+        key = "G"
         keyAction()
     }
-    @IBAction func key3_6(_ sender: UIButton) {
-        key = ":"
-        keyAction()
-    }
-    @IBAction func key3_7(_ sender: UIButton) {
-        key = "]"
-        keyAction()
-    }
-    
-    // row 4
     @IBOutlet weak var informationKey: UIButton!
     @IBAction func informationKeyAction(_ sender: UIButton) {
         typingGame()
     }
+    
+    // row 4
+    
     @IBAction func key4_1(_ sender: UIButton) {
-        key = "N"
+        key = "Z"
         keyAction()
     }
     @IBAction func key4_2(_ sender: UIButton) {
-        key = "M"
+        key = "X"
         keyAction()
     }
     @IBAction func key4_3(_ sender: UIButton) {
-        key = ","
+        key = "C"
         keyAction()
     }
     @IBAction func key4_4(_ sender: UIButton) {
-        key = "."
+        key = "V"
         keyAction()
     }
     @IBAction func key4_5(_ sender: UIButton) {
-        key = "/"
-        keyAction()
-    }
-    @IBAction func key4_6(_ sender: UIButton) {
-        key = "_"
+        key = "B"
         keyAction()
     }
     
     // Fix to the horizontal screen
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .landscape
     }
@@ -139,10 +116,10 @@ class KeyboardViewController: UIViewController {
     // Data ↓
     
     let letters: Array <String> =
-    ["6", "7", "8", "9", "0", "-", "^",
-     "Y", "U", "I", "O", "P", "@", "[",
-     "H", "J", "K", "L", ";", ":", "]",
-     "N", "M", ",", ".", "/", "_"]
+    ["1", "2", "3", "4", "5",
+     "Q", "W", "E", "R", "T",
+     "A", "S", "D", "F", "G",
+     "Z", "X", "C", "V", "B"]
     
     var key = ""
     
@@ -158,10 +135,9 @@ class KeyboardViewController: UIViewController {
     
     // Life cycle method ↓
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         informationKey.setTitleColor(UIColor.lightGray, for: .disabled)
-        tutorial()
     }
     
     // Functions for informationKey ↓
@@ -230,16 +206,6 @@ class KeyboardViewController: UIViewController {
             informationKey.setTitle("\(Int(correct/40*100))%\n\(Int(40/finish*60))c/min", for: .normal)
             reset = true
             self.informationKey.isEnabled = true
-        }
-    }
-    
-    // App description (first launch only)
-    func tutorial() {
-        if UserDefaults.standard.bool(forKey: "firstLunchKey") {
-            let tutorialView = UIStoryboard(name: "TutorialView", bundle: nil)
-            guard let tutorialViewController = tutorialView.instantiateInitialViewController() as? TutorialViewController else { return }
-            present(tutorialViewController, animated: true)
-            UserDefaults.standard.set(false, forKey: "firstLunchKey")
         }
     }
     
