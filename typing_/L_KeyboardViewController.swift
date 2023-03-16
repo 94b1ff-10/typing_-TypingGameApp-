@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 import AVFoundation
 
 class L_KeyboardViewController: UIViewController {
@@ -85,6 +86,11 @@ class L_KeyboardViewController: UIViewController {
     }
     
     // row 4
+    
+    @IBAction func recordKey(_ sender: Any) {
+        let recordViewController = self.storyboard?.instantiateViewController(withIdentifier: "RecordView") as! RecordViewController
+        present(recordViewController, animated: true)
+    }
     
     @IBAction func key4_1(_ sender: UIButton) {
         key = "Z"
@@ -204,6 +210,15 @@ class L_KeyboardViewController: UIViewController {
         if informationKeyTitle.isEmpty && !informationKey.isEnabled {
             let finish = Date().timeIntervalSince(start)
             informationKey.setTitle("\(Int(correct/40*100))%\n\(Int(40/finish*60))c/min", for: .normal)
+            let resultData = DataModel()
+            let realm = try! Realm()
+            try! realm.write {
+                resultData.recordDate = Date()
+                resultData.sides = "Left "
+                resultData.accuracy = Int(correct/40*100)
+                resultData.speed = Int(40/finish*60)
+                realm.add(resultData)
+            }
             reset = true
             self.informationKey.isEnabled = true
         }

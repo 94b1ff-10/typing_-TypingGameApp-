@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 import AVFoundation
 
 class R_KeyboardViewController: UIViewController {
@@ -232,6 +233,15 @@ class R_KeyboardViewController: UIViewController {
         if informationKeyTitle.isEmpty && !informationKey.isEnabled {
             let finish = Date().timeIntervalSince(start)
             informationKey.setTitle("\(Int(correct/40*100))%\n\(Int(40/finish*60))c/min", for: .normal)
+            let resultData = DataModel()
+            let realm = try! Realm()
+            try! realm.write {
+                resultData.recordDate = Date()
+                resultData.sides = "Right"
+                resultData.accuracy = Int(correct/40*100)
+                resultData.speed = Int(40/finish*60)
+                realm.add(resultData)
+            }
             reset = true
             self.informationKey.isEnabled = true
         }
