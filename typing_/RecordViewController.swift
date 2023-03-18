@@ -44,6 +44,7 @@ class RecordViewController: UIViewController {
 extension RecordViewController: UITableViewDataSource {
     //下の"numberOfRowsInSection"はUITableViewに表示するリストの数を定義するmethod
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        dataList.reverse()
         return dataList.count
     }
     //下の"cellForRowAt"はUItableViewに表示されるリストの中身(cellという)を定義するmethod
