@@ -135,8 +135,6 @@ class L_KeyboardViewController: UIViewController {
     
     var start = Date()
     
-    var reset = false
-    
     var player: AVAudioPlayer?
     
     // Life cycle method ↓
@@ -149,16 +147,7 @@ class L_KeyboardViewController: UIViewController {
     // Functions for informationKey ↓
     
     func typingGame() {
-        if reset {
-            informationKey.setTitle("🎮", for: .normal)
-            reset = false
-        } else {
-            informationKey.isEnabled = false
-            countDown()
-        }
-    }
-    
-    func countDown() {
+        informationKey.isEnabled = false
         var count = 3
         informationKey.setTitle("\(count)", for: .normal)
         count -= 1
@@ -189,6 +178,7 @@ class L_KeyboardViewController: UIViewController {
     
     func keyAction() {
         
+        // haptic
         UISelectionFeedbackGenerator().selectionChanged()
         
         if let soundURL = Bundle.main.url(forResource: "keySound", withExtension: "wav") {
@@ -209,19 +199,34 @@ class L_KeyboardViewController: UIViewController {
         
         if informationKeyTitle.isEmpty && !informationKey.isEnabled {
             let finish = Date().timeIntervalSince(start)
-            informationKey.setTitle("\(Int(correct/40*100))%\n\(Int(40/finish*60))c/min", for: .normal)
             let resultData = DataModel()
             let realm = try! Realm()
             try! realm.write {
                 resultData.recordDate = Date()
-                resultData.sides = "Left "
+                resultData.sides = "Left"
                 resultData.accuracy = Int(correct/40*100)
                 resultData.speed = Int(40/finish*60)
                 realm.add(resultData)
             }
-            reset = true
-            self.informationKey.isEnabled = true
+            typingResult(accuracy: Int(correct/40*100), speed: Int(40/finish*60))
         }
     }
     
+    // alert for result ↓
+    
+    func typingResult(accuracy: Int, speed: Int) {
+        
+        let alert = UIAlertController(title: "Accuracy: \(accuracy)%\nSpeed: \(speed)c/min", message: "", preferredStyle: .alert)
+        
+        let alertAction = UIAlertAction(title: "↩︎ Enter", style: .default, handler: { (action) -> Void in
+            self.informationKey.setTitle("🎮", for: .normal)
+            self.informationKey.isEnabled = true
+        })
+        
+        alert.view.tintColor = UIColor.black
+        alert.addAction(alertAction)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }
+
