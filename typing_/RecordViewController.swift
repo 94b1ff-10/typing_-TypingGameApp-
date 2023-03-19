@@ -17,13 +17,31 @@ class RecordViewController: UIViewController {
         self.dismiss(animated: true)
     }
     
+    @IBAction func deleteAll(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Are you sure you want to delete all history?", message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "No", style: .default))
+        let yesAction = UIAlertAction(title: "Delete", style: .destructive) { (UIAlertAction) in
+            let realm = try! Realm()
+                try! realm.write {
+                    realm.deleteAll()
+                }
+            self.dataList.removeAll()
+            self.tableView.reloadData()
+        }
+        alert.addAction(yesAction)
+        present(alert, animated: true)
+    }
+    
+    // Life cycle method ↓
+    
     override func viewDidLoad() {
         tableView.dataSource = self
         tableView.delegate = self
         setData()
     }
     
-    // Changes date format
+    // Changes date format ↓
+    
     var dateFormat: DateFormatter {
      let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
