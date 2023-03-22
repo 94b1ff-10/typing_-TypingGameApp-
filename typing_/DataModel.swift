@@ -12,6 +12,8 @@ class DataModel: Object {
     @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var recordDate: Date = Date()
     @objc dynamic var sides: String = String()
+    @objc dynamic var duration: Double = Double()
     @objc dynamic var accuracy: Int = Int()
     @objc dynamic var speed: Int = Int()
+    @objc dynamic var weakKey: String = String()
 }

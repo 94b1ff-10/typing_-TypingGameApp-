@@ -20,6 +20,7 @@
 		A151EF5029B3B88700946442 /* L_KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151EF4F29B3B88700946442 /* L_KeyboardViewController.swift */; };
 		A151EF5229B4FA6400946442 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151EF5129B4FA6400946442 /* PageViewController.swift */; };
 		A1E6007A298D328B000B7C32 /* keySound.wav in Resources */ = {isa = PBXBuildFile; fileRef = A1E60079298D328B000B7C32 /* keySound.wav */; };
+		A1F8F10129C79F0800A48681 /* BestScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8F10029C79F0800A48681 /* BestScoreViewController.swift */; };
 		AFB027650631CE535ECE8426 /* Pods_typing__typing_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6501C3A887F0339E0B2C4E0A /* Pods_typing__typing_UITests.framework */; };
 		D612E0EB52C571E2B2642B9A /* Pods_typing_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960FA4DE360DDA3B83EB0AF1 /* Pods_typing_Tests.framework */; };
 		F83D37B3F1C8EF9DE3B246E5 /* Pods_typing_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC423EC0B4955A94DF04032C /* Pods_typing_.framework */; };
@@ -67,6 +68,7 @@
 		A151EF4F29B3B88700946442 /* L_KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L_KeyboardViewController.swift; sourceTree = "<group>"; };
 		A151EF5129B4FA6400946442 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		A1E60079298D328B000B7C32 /* keySound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = keySound.wav; sourceTree = "<group>"; };
+		A1F8F10029C79F0800A48681 /* BestScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestScoreViewController.swift; sourceTree = "<group>"; };
 		C7CBEB877F6ADF42C78C14DC /* Pods-typing_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typing_Tests.debug.xcconfig"; path = "Target Support Files/Pods-typing_Tests/Pods-typing_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC423EC0B4955A94DF04032C /* Pods_typing_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_typing_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -132,6 +134,7 @@
 				A151EF5129B4FA6400946442 /* PageViewController.swift */,
 				A10AFB8C2934C55300C36EDE /* R_KeyboardViewController.swift */,
 				A151EF4F29B3B88700946442 /* L_KeyboardViewController.swift */,
+				A1F8F10029C79F0800A48681 /* BestScoreViewController.swift */,
 				A132395F29BD9AA00035BAC9 /* RecordViewController.swift */,
 				A132396129BF30B80035BAC9 /* TableViewCell.swift */,
 				A132396329BF60950035BAC9 /* DataModel.swift */,
@@ -404,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10AFB8D2934C55300C36EDE /* R_KeyboardViewController.swift in Sources */,
+				A1F8F10129C79F0800A48681 /* BestScoreViewController.swift in Sources */,
 				A132396229BF30B80035BAC9 /* TableViewCell.swift in Sources */,
 				A10E4C702934599E00818DCD /* AppDelegate.swift in Sources */,
 				A10AFB912934E21700C36EDE /* TutorialViewController.swift in Sources */,
