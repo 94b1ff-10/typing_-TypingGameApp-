@@ -74,11 +74,12 @@ class BestScoreViewController: UIViewController {
         let closestAccuracyScore = closestAccuracy ?? DataModel()
         
         // Get the most common weak key
-        let mostCommonWeakKey = scores.reduce([String: Int]()) { (dict, score) -> [String: Int] in
-            var dict = dict
-            dict[score.weakKey, default: 0] += 1
-            return dict
-        }.max { $0.value < $1.value }?.key ?? ""
+        let nonEmptyWeakKeys = scores.filter("weakKey != ''")
+            let mostCommonWeakKey = nonEmptyWeakKeys.reduce([String: Int]()) { (dict, score) -> [String: Int] in
+                var dict = dict
+                dict[score.weakKey, default: 0] += 1
+                return dict
+            }.max { $0.value < $1.value }?.key ?? ""
         
         let bestScore = DataModel()
         bestScore.duration = bestDurationScore.duration
