@@ -236,21 +236,21 @@ class R_KeyboardViewController: UIViewController {
                 resultData.duration = (finish * 100).rounded() / 100
                 resultData.accuracy = Int(correct/40*100)
                 resultData.speed = Int(40/finish*60)
-                resultData.weakKey = sortedMistakes.first ?? "N/A"
+                resultData.weakKey = sortedMistakes.first ?? ""
                 try! realm.write {
                     realm.add(resultData)
                 }
                 inGame = false
-                typingResult(accuracy: Int(correct/40*100), speed: Int(40/finish*60))
+                typingResult(accuracy: Int(correct/40*100), speed: Int(40/finish*60), weakKey: sortedMistakes.first ?? " ")
             }
         }
     }
     
     // alert view for result ↓
     
-    func typingResult(accuracy: Int, speed: Int) {
+    func typingResult(accuracy: Int, speed: Int, weakKey: String) {
         
-        let alert = UIAlertController(title: "Accuracy: \(accuracy)%\nSpeed: \(speed)c/min", message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Accuracy: \(accuracy)%\nSpeed: \(speed)c/min\nWeak Key: \(weakKey)", message: "", preferredStyle: .alert)
         
         let alertAction = UIAlertAction(title: "↩︎ Enter", style: .default, handler: { (action) -> Void in
             self.informationKey.setTitle("🎮", for: .normal)
