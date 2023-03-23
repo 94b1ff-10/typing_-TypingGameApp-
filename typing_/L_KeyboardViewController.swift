@@ -219,7 +219,7 @@ class L_KeyboardViewController: UIViewController {
                     realm.add(resultData)
                 }
                 inGame = false
-                typingResult(accuracy: Int(correct/40*100), speed: Int(40/finish*60), weakKey: sortedMistakes.first ?? " ")
+                typingResult(accuracy: Int(correct/40*100), speed: Int(40/finish*60), weakKey: sortedMistakes.first ?? "")
             }
         }
     }

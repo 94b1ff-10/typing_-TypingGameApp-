@@ -11,6 +11,8 @@ import RealmSwift
 
 class RecordViewController: UIViewController {
     
+    var realm: Realm!
+    
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func backButtonAction(_ sender: UIButton) {
@@ -21,9 +23,9 @@ class RecordViewController: UIViewController {
         let alert = UIAlertController(title: "Are you sure you want to delete all history?", message: "", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "No", style: .default))
         let yesAction = UIAlertAction(title: "Delete", style: .destructive) { (UIAlertAction) in
-            let realm = try! Realm()
-                try! realm.write {
-                    realm.deleteAll()
+            self.realm = try! Realm()
+            try! self.realm.write {
+                self.realm.deleteAll()
                 }
             self.dataList.removeAll()
             self.tableView.reloadData()
@@ -51,7 +53,7 @@ class RecordViewController: UIViewController {
     var dataList: [DataModel] = []
     
     func setData() {
-        let realm = try! Realm()
+        realm = try! Realm()
         let typingResultData = realm.objects(DataModel.self)
         dataList = Array(typingResultData)
     }
@@ -70,9 +72,10 @@ extension RecordViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
         //indexPath.row→ UITableViewに表示されるCellの(0から始まる)通し番号が順番に渡される
         let dataModel: DataModel = dataList[indexPath.row]
-        cell.setup(date: dateFormat.string(from: dataModel.recordDate), hand: dataModel.sides, accuracy: dataModel.accuracy, speed: dataModel.speed)
+        cell.setup(date: dateFormat.string(from: dataModel.recordDate), hand: dataModel.sides, accuracy: dataModel.accuracy, speed: dataModel.speed, weakKey: dataModel.weakKey)
         return cell
     }
+
 }
 
 //UITableViewを操作した際の挙動を定義する
@@ -80,7 +83,7 @@ extension RecordViewController: UITableViewDelegate {
     //UITableViewをスワイプした際にメモを削除するための処理
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         let targetCell = dataList[indexPath.row]
-        let realm = try! Realm()
+        realm = try! Realm()
         try! realm.write {
             realm.delete(targetCell)
         }

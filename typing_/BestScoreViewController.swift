@@ -11,6 +11,8 @@ import RealmSwift
 
 class BestScoreViewController: UIViewController {
     
+    var realm: Realm!
+    
     // Left score
     @IBOutlet weak var leftDuration: UILabel!
     @IBOutlet weak var leftAccuracy: UILabel!
@@ -22,8 +24,6 @@ class BestScoreViewController: UIViewController {
     @IBOutlet weak var rightAccuracy: UILabel!
     @IBOutlet weak var rightSpeed: UILabel!
     @IBOutlet weak var rightWeakKey: UILabel!
-    
-    var realm: Realm!
     
     @IBAction func backButtonAction(_ sender: UIButton) {
         self.dismiss(animated: true)
