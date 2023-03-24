@@ -13,6 +13,8 @@ class RecordViewController: UIViewController {
     
     var realm: Realm!
     
+    let notification = Notification(name: Notification.Name(rawValue: "update"))
+    
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func backButtonAction(_ sender: UIButton) {
@@ -27,6 +29,7 @@ class RecordViewController: UIViewController {
             try! self.realm.write {
                 self.realm.deleteAll()
                 }
+            NotificationCenter.default.post(self.notification)
             self.dataList.removeAll()
             self.tableView.reloadData()
         }
@@ -87,6 +90,7 @@ extension RecordViewController: UITableViewDelegate {
         try! realm.write {
             realm.delete(targetCell)
         }
+        NotificationCenter.default.post(notification)
         dataList.remove(at: indexPath.row)
         tableView.deleteRows(at: [indexPath], with: .automatic)
     }

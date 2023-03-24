@@ -36,6 +36,15 @@ class BestScoreViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(update(_:)), name: NSNotification.Name(rawValue: "update"), object: nil)
+        setScores()
+    }
+    
+    @objc func update(_ notification: Notification) {
+        setScores()
+    }
+    
+    func setScores() {
         
         // Get the default Realm
         realm = try! Realm()
