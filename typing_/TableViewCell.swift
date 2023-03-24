@@ -13,6 +13,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var handLabel: UILabel!
     @IBOutlet weak var accuracyLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
+    @IBOutlet weak var weakKeyLabel: UILabel!
     
     //Storyboardまたはnibファイルからロードされた直後に呼ばれる(初期化などUserTableViewCellがロードされた直後に１度だけ実行したい処理をここに実装します。)
     override func awakeFromNib() {
@@ -27,11 +28,12 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setup(date: String, hand: String, accuracy: Int, speed: Int) {
+    func setup(date: String, hand: String, accuracy: Int, speed: Int, weakKey: String) {
         dateLabel.text = date
         handLabel.text = hand
         accuracyLabel.text = "\(accuracy)%"
         speedLabel.text = "\(speed)c/min"
+        weakKeyLabel.text = weakKey
     }
 
 }
