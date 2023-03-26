@@ -257,7 +257,11 @@ class R_KeyboardViewController: UIViewController {
             self.informationKey.isEnabled = true
         })
         
-        alert.view.tintColor = UIColor.black
+        if self.traitCollection.userInterfaceStyle == .light {
+            alert.view.tintColor = UIColor.black
+        } else {
+            alert.view.tintColor = UIColor.white
+        }
         alert.addAction(alertAction)
         self.present(alert, animated: true, completion: nil)
     }
