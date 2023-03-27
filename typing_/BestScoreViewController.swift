@@ -98,4 +98,9 @@ class BestScoreViewController: UIViewController {
         
         return bestScore
     }
+    
+    // Fix to the horizontal screen
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .landscape
+    }
 }

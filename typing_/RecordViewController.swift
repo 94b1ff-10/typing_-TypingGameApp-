@@ -61,6 +61,11 @@ class RecordViewController: UIViewController {
         dataList = Array(typingResultData)
     }
     
+    // Fix to the horizontal screen
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .landscape
+    }
+    
 }
 
 //UITableViewに表示する内容を定義する↓
