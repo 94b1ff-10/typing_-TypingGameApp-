@@ -181,7 +181,7 @@ class L_KeyboardViewController: UIViewController {
     func keyAction() {
         
         // haptic
-        UISelectionFeedbackGenerator().selectionChanged()
+        UIImpactFeedbackGenerator(style: .rigid).impactOccurred()
         
         if let soundURL = Bundle.main.url(forResource: "keySound", withExtension: "wav") {
             do {

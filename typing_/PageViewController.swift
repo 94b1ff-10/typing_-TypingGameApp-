@@ -34,10 +34,10 @@ class PageViewController: UIPageViewController {
     }
     
     func initPageView(){
-        let RightKeyboardVC = storyboard!.instantiateViewController(withIdentifier: "RightKeyboardView") as! R_KeyboardViewController
-        let LeftKeyboardVC = storyboard!.instantiateViewController(withIdentifier: "LeftKeyboardView") as! L_KeyboardViewController
+        let L_KeyboardVC = storyboard!.instantiateViewController(withIdentifier: "LeftKeyboardView") as! L_KeyboardViewController
+        let R_KeyboardVC = storyboard!.instantiateViewController(withIdentifier: "RightKeyboardView") as! R_KeyboardViewController
         
-        controllers = [ LeftKeyboardVC, RightKeyboardVC ]
+        controllers = [ L_KeyboardVC, R_KeyboardVC ]
         setViewControllers([controllers[0]], direction: .forward, animated: true, completion: nil)
         dataSource = self
     }
